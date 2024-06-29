@@ -32,4 +32,16 @@ From the pairplot visualization, we can derive several insights into the relatio
 - **Newspaper advertising** shows the weakest correlation with sales, suggesting it may not be as effective as the other channels in driving sales.
 - The independence of budgets among `TV`, `Radio`, and `Newspaper` implies that businesses might consider reallocating their advertising budgets based on the effectiveness of each channel, with a focus on TV for maximum sales impact.
 
-These insights can help in making strategic decisions about where to allocate advertising resources to maximize sales.
+# RESULT 
+Results Table:
+               Model      RMSE       R^2
+0  Linear Regression  0.642581  0.986918
+1              Ridge  0.636045  0.987183
+2              Lasso  0.909664  0.973783
+3      Random Forest  0.570939  0.989673
+4  Gradient Boosting  0.564023  0.989921
+
+Best Model: GradientBoostingRegressor(n_estimators=200)
+Best RMSE: 0.5640232321263566
+Best R^2: 0.9899212298543076
+
